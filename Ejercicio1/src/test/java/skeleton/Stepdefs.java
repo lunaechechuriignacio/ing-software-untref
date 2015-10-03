@@ -56,5 +56,19 @@ public class Stepdefs {
 		this.game.getGamerTwo().game(hand);
 
 	}
+	
+	@Then("^gana jugador(\\d+)$")
+	public void wimmerGamer(int gamerNumber) throws Throwable {
+
+		if ((gamerNumber == 1) && (this.game.getWinner() == 1)) {
+			this.gamerWinner = 1;
+		} else if ((gamerNumber == 2) && (this.game.getWinner() == 2)) {
+			this.gamerWinner = 2;
+		} else {
+			this.gamerWinner = 0;
+		}
+
+		Assert.assertEquals(gamerNumber, this.gamerWinner);
+	}
 
 }

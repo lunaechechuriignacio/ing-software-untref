@@ -8,7 +8,7 @@ import cucumber.api.java.en.Then;
 
 public class Stepdefs {
 	
-	private Game game = new Game();
+		private Game game = new Game();
 	private int gamerWinner = 0;
 
 	@Given("^jugador1 juega PIEDRA$")
@@ -28,6 +28,19 @@ public class Stepdefs {
 		int gamer = 0;
 
 		Assert.assertEquals(gamer, this.game.getWinner());
+
+	}
+
+	@Given("^jugador1 juega TIJERA$")
+	public void gamerOnePlayScissor() throws Throwable {
+		Hand hand = new Scissor();
+		this.game.getGamerOne().game(hand);
+	}
+
+	@When("^jugador2 juega TIJERA$")
+	public void gamerTwoPlayScissor() throws Throwable {
+		Hand hand = new Scissor();
+		this.game.getGamerTwo().game(hand);
 
 	}
 

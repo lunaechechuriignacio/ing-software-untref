@@ -1,0 +1,34 @@
+package skeleton;
+
+import org.junit.Assert;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.Then;
+
+public class Stepdefs {
+	
+	private Game game = new Game();
+	private int gamerWinner = 0;
+
+	@Given("^jugador1 juega PIEDRA$")
+	public void gamerOnePlarStone() throws Throwable {
+		Hand hand = new Stone();
+		this.game.getGamerOne().game(hand);
+
+	}
+	@When("^jugador2 juega PIEDRA$")
+	public void gamerTwoPlayStone() throws Throwable {
+		Hand hand = new Stone();
+		this.game.getGamerTwo().game(hand);
+	}
+
+	@Then("^hay empate$")
+	public void hay_empate() throws Throwable {
+		int gamer = 0;
+
+		Assert.assertEquals(gamer, this.game.getWinner());
+
+	}
+
+}

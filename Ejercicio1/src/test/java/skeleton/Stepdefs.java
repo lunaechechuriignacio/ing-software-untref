@@ -43,5 +43,18 @@ public class Stepdefs {
 		this.game.getGamerTwo().game(hand);
 
 	}
+	
+		@Given("^jugador1 juega PAPEL$")
+	public void gamerOnePlayPaper() throws Throwable {
+		Hand hand = new Paper();
+		this.game.getGamerOne().game(hand);
+	}
+	
+	@When("^jugador2 juega PAPEL$")
+	public void gamerTwoPlayPaper() throws Throwable {
+		Hand hand = new Paper();
+		this.game.getGamerTwo().game(hand);
+
+	}
 
 }

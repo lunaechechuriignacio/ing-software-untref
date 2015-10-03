@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.015" errors="0" skipped="0" tests="24" name="skeleton.RunCukesTest">
+<testsuite failures="0" time="0" errors="0" skipped="0" tests="36" name="skeleton.RunCukesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_76\jre\bin"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.015" classname="Scenario: Piedra vs Piedra" name="Given jugador1 juega PIEDRA"/>
+  <testcase time="0" classname="Scenario: Piedra vs Piedra" name="Given jugador1 juega PIEDRA"/>
   <testcase time="0" classname="Scenario: Piedra vs Piedra" name="When jugador2 juega PIEDRA"/>
   <testcase time="0" classname="Scenario: Piedra vs Piedra" name="Then hay empate"/>
   <testcase time="0" classname="Scenario: Piedra vs Piedra" name="Scenario: Piedra vs Piedra"/>
@@ -73,6 +73,10 @@
   <testcase time="0" classname="Scenario: Papel vs Papel" name="When jugador2 juega PAPEL"/>
   <testcase time="0" classname="Scenario: Papel vs Papel" name="Then hay empate"/>
   <testcase time="0" classname="Scenario: Papel vs Papel" name="Scenario: Papel vs Papel"/>
+  <testcase time="0" classname="Scenario: Piedra vs Papel" name="Given jugador1 juega PIEDRA"/>
+  <testcase time="0" classname="Scenario: Piedra vs Papel" name="When jugador2 juega PAPEL"/>
+  <testcase time="0" classname="Scenario: Piedra vs Papel" name="Then gana jugador2"/>
+  <testcase time="0" classname="Scenario: Piedra vs Papel" name="Scenario: Piedra vs Papel"/>
   <testcase time="0" classname="Scenario: Papel vs Tijera" name="Given jugador1 juega PAPEL"/>
   <testcase time="0" classname="Scenario: Papel vs Tijera" name="When jugador2 juega TIJERA"/>
   <testcase time="0" classname="Scenario: Papel vs Tijera" name="Then gana jugador2"/>
@@ -85,4 +89,12 @@
   <testcase time="0" classname="Scenario: Tijera vs Papel" name="When jugador2 juega PAPEL"/>
   <testcase time="0" classname="Scenario: Tijera vs Papel" name="Then gana jugador1"/>
   <testcase time="0" classname="Scenario: Tijera vs Papel" name="Scenario: Tijera vs Papel"/>
+  <testcase time="0" classname="Scenario: Papel vs Piedra" name="Given jugador1 juega PAPEL"/>
+  <testcase time="0" classname="Scenario: Papel vs Piedra" name="When jugador2 juega PIEDRA"/>
+  <testcase time="0" classname="Scenario: Papel vs Piedra" name="Then gana jugador1"/>
+  <testcase time="0" classname="Scenario: Papel vs Piedra" name="Scenario: Papel vs Piedra"/>
+  <testcase time="0" classname="Scenario: Piedra vs Tijera" name="Given jugador1 juega PIEDRA"/>
+  <testcase time="0" classname="Scenario: Piedra vs Tijera" name="When jugador2 juega TIJERA"/>
+  <testcase time="0" classname="Scenario: Piedra vs Tijera" name="Then gana jugador1"/>
+  <testcase time="0" classname="Scenario: Piedra vs Tijera" name="Scenario: Piedra vs Tijera"/>
 </testsuite>

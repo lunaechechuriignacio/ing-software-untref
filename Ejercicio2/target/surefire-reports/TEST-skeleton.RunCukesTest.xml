@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="10" name="skeleton.RunCukesTest">
+<testsuite failures="0" time="0.011" errors="0" skipped="0" tests="48" name="skeleton.RunCukesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_76\jre\bin"/>
@@ -71,4 +71,42 @@
   <testcase time="0" classname="Scenario: Arriesgo una &quot;A&quot;" name="Then estado es &quot;a***&quot;"/>
   <testcase time="0" classname="Scenario: Arriesgo una &quot;A&quot;" name="And me quedan 7 vidas"/>
   <testcase time="0" classname="Scenario: Arriesgo una &quot;A&quot;" name="Scenario: Arriesgo una &quot;A&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="When arriesgo &quot;x&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="Then estado es &quot;****&quot;"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;x&quot;" name="And me quedan 6 vidas"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;x&quot;" name="Scenario: Arriesgo una &quot;x&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot;" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot;" name="When arriesgo &quot;o&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot;" name="Then estado es &quot;***o&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot;" name="And me quedan 7 vidas"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot;" name="Scenario: Arriesgo una &quot;o&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="When arriesgo &quot;u&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="Then estado es &quot;*u**&quot;"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;u&quot;" name="And me quedan 7 vidas"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;u&quot;" name="Scenario: Arriesgo una &quot;u&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;u&quot;" name="When arriesgo &quot;t&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="Then estado es &quot;**t*&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="And me quedan 7 vidas"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;u&quot;" name="Scenario: Arriesgo una &quot;u&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="And me quedan 1 vida"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="When arriesgo &quot;x&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="Then estado es &quot;****&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot;" name="And me quedan 0 vidas"/>
+  <testcase time="0.001" classname="Scenario: Arriesgo una &quot;x&quot;" name="Scenario: Arriesgo una &quot;x&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="And me quedan 0 vida"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="When arriesgo &quot;x&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="Then estado es &quot;****&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="And me quedan 0 vidas"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas" name="Scenario: Arriesgo una &quot;x&quot; con &quot;0&quot; vidas"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="Given la palabra secreta es &quot;auto&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="And me quedan 0 vida"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="When arriesgo &quot;o&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="Then estado es &quot;****&quot;"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="And me quedan 0 vidas"/>
+  <testcase time="0" classname="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas" name="Scenario: Arriesgo una &quot;o&quot; con &quot;0&quot; vidas"/>
 </testsuite>

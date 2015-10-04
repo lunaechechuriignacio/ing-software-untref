@@ -7,12 +7,19 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 
 public class Stepdefs {
-	
 	Game ahorcado = new Game("jugador", 7);
 	@Given("^la palabra secreta es \"(.*?)\"$")
 	
 	public void la_palabra_secreta_es(String wordSecret) throws Throwable {
 		ahorcado.setWordSecret(wordSecret);
+		ahorcado.setLifePlayer(7);
+
+	}
+
+	@Given("^me quedan (\\d+) vida$")
+	public void me_quedan_vida(int lifes) throws Throwable {
+	
+		ahorcado.setLifePlayer(lifes);
 
 	}
 
@@ -36,7 +43,5 @@ public class Stepdefs {
 		Assert.assertEquals(ahorcado.remainingLife(), life);
 
 	}
-
-
 
 }

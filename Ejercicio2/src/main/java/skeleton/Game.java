@@ -1,8 +1,6 @@
 package skeleton;
 
-public class Game {
-
-	private Player player;
+public class Game {private Player player;
 	private DictionaryWordSecret wordSecret;
 	private char[] arrayWordSecret, discoveryWord;
 
@@ -56,7 +54,7 @@ public class Game {
 
 	private boolean compareEqualsLengthWordSecrectAndDiscoveryWord() {
 
-		return (this.arrayWordSecret.length == this.discoveryWord.length);
+		return (this.arrayWordSecret == this.discoveryWord);
 	}
 
 	public int remainingLife() {
@@ -65,9 +63,14 @@ public class Game {
 	}
 
 	public boolean endGame() {
+boolean result =!((this.remainingLife() > 0)
+				&& (!this.compareEqualsLengthWordSecrectAndDiscoveryWord()));
+		return result;
+	}
 
-		return !(this.remainingLife() > 0)
-				&& (!this.compareEqualsLengthWordSecrectAndDiscoveryWord());
+	public void setLifePlayer(int numberLife) {
+		this.player.setNumberLife(numberLife);
+
 	}
 
 	public void playGame(char character) {
@@ -76,7 +79,7 @@ public class Game {
 
 			boolean foundChar = this.searchCharacterInWordSecret(character);
 
-			if (!foundChar) {
+			if ((!foundChar)&&(this.remainingLife()>0)) {
 
 				this.subtractLifePlayer();
 

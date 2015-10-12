@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0" errors="0" skipped="0" tests="14" name="skeleton.TestTablero">
+<testsuite failures="0" time="0.001" errors="0" skipped="0" tests="14" name="skeleton.TestTablero">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_76\jre\bin"/>
@@ -63,7 +63,7 @@
   </properties>
   <testcase time="0" classname="skeleton.TestTablero" name="errarDisparoDondeHayAgua"/>
   <testcase time="0" classname="skeleton.TestTablero" name="agregarUnDestructorVerticalConLaPosicionFinalFueraDelTablero"/>
-  <testcase time="0" classname="skeleton.TestTablero" name="agregarUnDestructorFueraDelTableroDeLasFilas"/>
+  <testcase time="0.001" classname="skeleton.TestTablero" name="agregarUnDestructorFueraDelTableroDeLasFilas"/>
   <testcase time="0" classname="skeleton.TestTablero" name="agregarUnAcorazadoVerticalConUnBarcoEnElTablero"/>
   <testcase time="0" classname="skeleton.TestTablero" name="agregarUnAcorazadoFueraDelTableroDeLasFilas"/>
   <testcase time="0" classname="skeleton.TestTablero" name="agregarUnAcorazadoFueraDelTableroDeLasColumanas"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.553" errors="0" skipped="32" tests="40" name="skeleton.RunCukesTest">
+<testsuite failures="0" time="0.483" errors="0" skipped="32" tests="40" name="skeleton.RunCukesTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_76\jre\bin"/>
@@ -61,22 +61,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.007" classname="Scenario: Disparo y toco agua" name="Given no hay barcos en posicion 1,8">
+  <testcase time="0.004" classname="Scenario: Disparo y toco agua" name="Given no hay barcos en posicion 1,8">
     <skipped/>
     <system-out>Feature: Como usuario quiero disparar a los barcos enemigos
 </system-out>
   </testcase>
-  <testcase time="0.008" classname="Scenario: Disparo y toco agua" name="When disparo a la posicion 1,8">
+  <testcase time="0.007" classname="Scenario: Disparo y toco agua" name="When disparo a la posicion 1,8">
     <skipped/>
   </testcase>
-  <testcase time="0.008" classname="Scenario: Disparo y toco agua" name="Then el disparo dio en el agua">
+  <testcase time="0.007" classname="Scenario: Disparo y toco agua" name="Then el disparo dio en el agua">
     <skipped/>
   </testcase>
-  <testcase time="0.008" classname="Scenario: Disparo y toco agua" name="Scenario: Disparo y toco agua">
+  <testcase time="0.007" classname="Scenario: Disparo y toco agua" name="Scenario: Disparo y toco agua">
     <skipped/>
   </testcase>
-  <testcase time="0.008" classname="Scenario: Disparo y toco agua" name="Scenario: Disparo y toco agua"/>
-  <testcase time="0.006" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Given hay un barco en posicion 1,8">
+  <testcase time="0.007" classname="Scenario: Disparo y toco agua" name="Scenario: Disparo y toco agua"/>
+  <testcase time="0.007" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Given hay un barco en posicion 1,8">
     <skipped/>
     <system-out>
   Scenario: Disparo y toco agua         &amp;#27;[90m# skeleton/DispararBarcos.feature:3&amp;#27;[0m
@@ -85,17 +85,17 @@
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mel disparo dio en el agua&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.009" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="When disparo a la posicion 1,8">
+  <testcase time="0.008" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="When disparo a la posicion 1,8">
     <skipped/>
   </testcase>
-  <testcase time="0.009" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Then el disparo dio en el blanco">
+  <testcase time="0.008" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Then el disparo dio en el blanco">
     <skipped/>
   </testcase>
-  <testcase time="0.046" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Scenario: Disparo y toco un barco pero no lo hundo">
+  <testcase time="0.008" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Scenario: Disparo y toco un barco pero no lo hundo">
     <skipped/>
   </testcase>
-  <testcase time="0.046" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Scenario: Disparo y toco un barco pero no lo hundo"/>
-  <testcase time="0.01" classname="Scenario: Disparo toco un barco y lo hundo" name="Given disparo a la posicion 1,8 And el disparo dio en el blanco">
+  <testcase time="0.009" classname="Scenario: Disparo y toco un barco pero no lo hundo" name="Scenario: Disparo y toco un barco pero no lo hundo"/>
+  <testcase time="0.007" classname="Scenario: Disparo toco un barco y lo hundo" name="Given disparo a la posicion 1,8 And el disparo dio en el blanco">
     <skipped/>
     <system-out>
   Scenario: Disparo y toco un barco pero no lo hundo &amp;#27;[90m# skeleton/DispararBarcos.feature:8&amp;#27;[0m
@@ -104,17 +104,17 @@
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mel disparo dio en el blanco&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.01" classname="Scenario: Disparo toco un barco y lo hundo" name="When todas las posiciones del barco han sido destruidas">
+  <testcase time="0.007" classname="Scenario: Disparo toco un barco y lo hundo" name="When todas las posiciones del barco han sido destruidas">
     <skipped/>
   </testcase>
-  <testcase time="0.01" classname="Scenario: Disparo toco un barco y lo hundo" name="Then el barco ha sido hundido">
+  <testcase time="0.007" classname="Scenario: Disparo toco un barco y lo hundo" name="Then el barco ha sido hundido">
     <skipped/>
   </testcase>
-  <testcase time="0.01" classname="Scenario: Disparo toco un barco y lo hundo" name="Scenario: Disparo toco un barco y lo hundo">
+  <testcase time="0.007" classname="Scenario: Disparo toco un barco y lo hundo" name="Scenario: Disparo toco un barco y lo hundo">
     <skipped/>
   </testcase>
-  <testcase time="0.011" classname="Scenario: Disparo toco un barco y lo hundo" name="Scenario: Disparo toco un barco y lo hundo"/>
-  <testcase time="0.046" classname="Scenario: No se puede disparar fuera del tablero" name="Given tablero es de 10x10">
+  <testcase time="0.007" classname="Scenario: Disparo toco un barco y lo hundo" name="Scenario: Disparo toco un barco y lo hundo"/>
+  <testcase time="0.009" classname="Scenario: No se puede disparar fuera del tablero" name="Given tablero es de 10x10">
     <skipped/>
     <system-out>
   Scenario: Disparo toco un barco y lo hundo                        &amp;#27;[90m# skeleton/DispararBarcos.feature:13&amp;#27;[0m
@@ -123,17 +123,17 @@
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mel barco ha sido hundido&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.046" classname="Scenario: No se puede disparar fuera del tablero" name="When disparo a la posicion 11,1">
+  <testcase time="0.01" classname="Scenario: No se puede disparar fuera del tablero" name="When disparo a la posicion 11,1">
     <skipped/>
   </testcase>
-  <testcase time="0.047" classname="Scenario: No se puede disparar fuera del tablero" name="Then no se puede disparar a esa posicion">
+  <testcase time="0.01" classname="Scenario: No se puede disparar fuera del tablero" name="Then no se puede disparar a esa posicion">
     <skipped/>
   </testcase>
-  <testcase time="0.047" classname="Scenario: No se puede disparar fuera del tablero" name="Scenario: No se puede disparar fuera del tablero">
+  <testcase time="0.01" classname="Scenario: No se puede disparar fuera del tablero" name="Scenario: No se puede disparar fuera del tablero">
     <skipped/>
   </testcase>
-  <testcase time="0.047" classname="Scenario: No se puede disparar fuera del tablero" name="Scenario: No se puede disparar fuera del tablero"/>
-  <testcase time="0.001" classname="Scenario: Ubico mi barco exitosamente" name="Given posicion (1,1) esta libre y posicion (1,2) esta libre">
+  <testcase time="0.01" classname="Scenario: No se puede disparar fuera del tablero" name="Scenario: No se puede disparar fuera del tablero"/>
+  <testcase time="0" classname="Scenario: Ubico mi barco exitosamente" name="Given posicion (1,1) esta libre y posicion (1,2) esta libre">
     <skipped/>
     <system-out>
   Scenario: No se puede disparar fuera del tablero &amp;#27;[90m# skeleton/DispararBarcos.feature:18&amp;#27;[0m
@@ -143,17 +143,17 @@
 Feature: Como usuario quiero ubicar mis barcos
 </system-out>
   </testcase>
-  <testcase time="0.001" classname="Scenario: Ubico mi barco exitosamente" name="When jugador posiciona un &quot;Acorazado&quot; en la posicion (1,1) &quot;HORIZONTAL&quot;">
+  <testcase time="0" classname="Scenario: Ubico mi barco exitosamente" name="When jugador posiciona un &quot;Acorazado&quot; en la posicion (1,1) &quot;HORIZONTAL&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.001" classname="Scenario: Ubico mi barco exitosamente" name="Then barco posicionado exitosamente">
+  <testcase time="0.006" classname="Scenario: Ubico mi barco exitosamente" name="Then barco posicionado exitosamente">
     <skipped/>
   </testcase>
-  <testcase time="0.001" classname="Scenario: Ubico mi barco exitosamente" name="Scenario: Ubico mi barco exitosamente">
+  <testcase time="0.006" classname="Scenario: Ubico mi barco exitosamente" name="Scenario: Ubico mi barco exitosamente">
     <skipped/>
   </testcase>
-  <testcase time="0.001" classname="Scenario: Ubico mi barco exitosamente" name="Scenario: Ubico mi barco exitosamente"/>
-  <testcase time="0.004" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Given hay un barco en posicion (1,1)">
+  <testcase time="0.006" classname="Scenario: Ubico mi barco exitosamente" name="Scenario: Ubico mi barco exitosamente"/>
+  <testcase time="0.019" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Given hay un barco en posicion (1,1)">
     <skipped/>
     <system-out>
   Scenario: Ubico mi barco exitosamente                                     &amp;#27;[90m# skeleton/UbicarBarcos.feature:3&amp;#27;[0m
@@ -162,17 +162,17 @@ Feature: Como usuario quiero ubicar mis barcos
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mbarco posicionado exitosamente&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.004" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="When jugador posiciona un barco en la posicion (1,1) &quot;HORIZONTAL&quot;">
+  <testcase time="0.019" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="When jugador posiciona un barco en la posicion (1,1) &quot;HORIZONTAL&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Then posicion ocupada no se puede ubicar el barco alli">
+  <testcase time="0.02" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Then posicion ocupada no se puede ubicar el barco alli">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Scenario: No se puede ubicar un barco en una posici�n ya ocupada">
+  <testcase time="0.02" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Scenario: No se puede ubicar un barco en una posici�n ya ocupada">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Scenario: No se puede ubicar un barco en una posici�n ya ocupada"/>
-  <testcase time="0.004" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Given hay un barco en posicion (2,1)">
+  <testcase time="0.02" classname="Scenario: No se puede ubicar un barco en una posici�n ya ocupada" name="Scenario: No se puede ubicar un barco en una posici�n ya ocupada"/>
+  <testcase time="0.011" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Given hay un barco en posicion (2,1)">
     <skipped/>
     <system-out>
   Scenario: No se puede ubicar un barco en una posici?n ya ocupada    &amp;#27;[90m# skeleton/UbicarBarcos.feature:8&amp;#27;[0m
@@ -181,17 +181,17 @@ Feature: Como usuario quiero ubicar mis barcos
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mposicion ocupada no se puede ubicar el barco alli&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="When jugador posiciona un  &quot;Destructor&quot; en la posicion (1,1) &quot;VERTICAL&quot;">
+  <testcase time="0.012" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="When jugador posiciona un  &quot;Destructor&quot; en la posicion (1,1) &quot;VERTICAL&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Then posicion ocupada no se puede ubicar el barco alli">
+  <testcase time="0.012" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Then posicion ocupada no se puede ubicar el barco alli">
     <skipped/>
   </testcase>
-  <testcase time="0.005" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro">
+  <testcase time="0.013" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro">
     <skipped/>
   </testcase>
-  <testcase time="0.006" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro"/>
-  <testcase time="0.012" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Given tablero es de 10x10">
+  <testcase time="0.013" classname="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro" name="Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro"/>
+  <testcase time="0.03" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Given tablero es de 10x10">
     <skipped/>
     <system-out>
   Scenario: No se puede ubicar un barco si alguna de sus posiciones intermedias esta siendo ocupada por otro &amp;#27;[90m# skeleton/UbicarBarcos.feature:13&amp;#27;[0m
@@ -200,14 +200,14 @@ Feature: Como usuario quiero ubicar mis barcos
     &amp;#27;[33mThen &amp;#27;[0m&amp;#27;[33mposicion ocupada no se puede ubicar el barco alli&amp;#27;[0m
 </system-out>
   </testcase>
-  <testcase time="0.012" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="When jugador posiciona un barco en la posicion (11,1) &quot;VERTICAL&quot;">
+  <testcase time="0.03" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="When jugador posiciona un barco en la posicion (11,1) &quot;VERTICAL&quot;">
     <skipped/>
   </testcase>
-  <testcase time="0.012" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Then la posicion elegida no pertenece al tablero">
+  <testcase time="0.03" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Then la posicion elegida no pertenece al tablero">
     <skipped/>
   </testcase>
-  <testcase time="0.012" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero">
+  <testcase time="0.03" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero">
     <skipped/>
   </testcase>
-  <testcase time="0.013" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero"/>
+  <testcase time="0.03" classname="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero" name="Scenario: No puedo ubicar mi barco en una posici�n fuera del tablero"/>
 </testsuite>

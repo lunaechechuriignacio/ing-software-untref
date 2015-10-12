@@ -128,7 +128,7 @@ public class TestTablero {
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
 	
-/*	@Test
+	@Test
 	public void acertarDisparoDondeHayUnDestructor() {
 		Tablero tablero = new Tablero(10);
 		Posicion posicionInicial = new Posicion(1, 1);
@@ -162,5 +162,5 @@ public class TestTablero {
 		Posicion posicionDisparo = new Posicion(1, 11);
 		tablero.dispararABarco(posicionDisparo);
 		Assert.assertFalse(tablero.getEstadoAciertoDistaro());
-	}*/
+	}
 }

@@ -6,7 +6,7 @@ public class Tablero {
 
 	private ArrayList<Barco> tablero;
 	private int tamanoTablero;
-	private boolean estadoBarcoAgregado;
+	private boolean estadoBarcoAgregado, estadoAciertoDisparo;
 
 	public Tablero(int tamano) {
 		tablero = new ArrayList<Barco>();
@@ -49,11 +49,6 @@ public class Tablero {
 		}
 	}
 
-	private boolean verificarLimiteDeTablero(int posicion) {
-
-		return ((posicion >= 0) && (posicion <= this.tamanoTablero));
-	}
-
 	private void eleccionHorizontalOVertical(Posicion posicionInicial,
 			Barco barco, String orientacion) {
 
@@ -66,6 +61,11 @@ public class Tablero {
 	private void agregarBarcoAlTablero(Barco barco) {
 		if (this.isEstadoBarcoAgregado())
 			this.tablero.add(barco);
+	}
+
+	private boolean verificarLimiteDeTablero(int posicion) {
+
+		return ((posicion >= 0) && (posicion <= this.tamanoTablero));
 	}
 
 	private Posicion nuevaPosicion(int fila, int columna) {
@@ -101,7 +101,7 @@ public class Tablero {
 		barco.setPosicionTablero(ubicacion);
 		this.setEstadoBarcoAgregado(estadoPosicion);
 	}
-	
+
 	private void agregarBarcoVertical(Posicion posicionInicial, Barco barco) {
 		boolean estadoPosicion = true;
 		ArrayList<Posicion> ubicacion = new ArrayList<Posicion>();
@@ -128,4 +128,17 @@ public class Tablero {
 		this.estadoBarcoAgregado = estadoBarcoAgregado;
 	}
 
+	public boolean getEstadoAciertoDistaro() {
+		return this.estadoAciertoDisparo;
+	}
+
+	public void dispararABarco(Posicion posicionDeDisparo) {
+		this.estadoAciertoDisparo = false;
+
+		for (Barco barcoEncontrado : tablero) {
+			if (barcoEncontrado.aciertoDisparo(posicionDeDisparo))
+				this.estadoAciertoDisparo = true;
+		}
+	}
 }
+

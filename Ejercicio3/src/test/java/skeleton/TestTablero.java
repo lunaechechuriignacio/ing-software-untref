@@ -17,7 +17,7 @@ public class TestTablero {
 		Assert.assertTrue(tablero.isEstadoBarcoAgregado());
 	}
 
-/*	@Test
+	@Test
 	public void agregarUnAcorazadoHorizaontalConUnBarcoEnElTablero() {
 		Tablero tablero = new Tablero(10);
 		Posicion posicionInicial = new Posicion(1, 1);
@@ -29,7 +29,7 @@ public class TestTablero {
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
 
-	@Test
+	/*@Test
 	public void agregarUnAcorazadoHorizaontalConLaPosicionFinalFueraDelTablero() {
 		Tablero tablero = new Tablero(10);
 		Posicion posicionInicial = new Posicion(10, 1);

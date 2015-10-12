@@ -73,7 +73,7 @@ public class TestTablero {
 		Assert.assertTrue(tablero.isEstadoBarcoAgregado());
 	}
 
-/*	@Test
+	@Test
 	public void agregarUnAcorazadoVerticalConTableroVacio() {
 		Tablero tablero = new Tablero(10);
 		Posicion posicionInicial = new Posicion(1, 1);
@@ -128,7 +128,7 @@ public class TestTablero {
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
 	
-	@Test
+/*	@Test
 	public void acertarDisparoDondeHayUnDestructor() {
 		Tablero tablero = new Tablero(10);
 		Posicion posicionInicial = new Posicion(1, 1);

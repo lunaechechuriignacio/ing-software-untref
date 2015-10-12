@@ -59,7 +59,8 @@ public class Tablero {
 
 		if (orientacion == "Horizontal")
 			this.agregarBarcoHorinzontal(posicionInicial, barco);
-
+		else
+			this.agregarBarcoVertical(posicionInicial, barco);
 	}
 
 	private void agregarBarcoAlTablero(Barco barco) {
@@ -95,6 +96,24 @@ public class Tablero {
 			ubicacion.add(posicion);
 			estadoPosicion = ((this.estadoPosicionLibre(posicion)) && (this
 					.verificarLimiteDeTablero(posicion.getFila())));
+			cantidadDePosiciones++;
+		}
+		barco.setPosicionTablero(ubicacion);
+		this.setEstadoBarcoAgregado(estadoPosicion);
+	}
+	
+	private void agregarBarcoVertical(Posicion posicionInicial, Barco barco) {
+		boolean estadoPosicion = true;
+		ArrayList<Posicion> ubicacion = new ArrayList<Posicion>();
+		Posicion posicion;
+		int cantidadDePosiciones = 0;
+		while ((estadoPosicion)
+				&& (cantidadDePosiciones < barco.getTamanoLongitud())) {
+			posicion = nuevaPosicion(posicionInicial.getFila(),
+					posicionInicial.getColumna() + cantidadDePosiciones);
+			ubicacion.add(posicion);
+			estadoPosicion = ((this.estadoPosicionLibre(posicion)) && (this
+					.verificarLimiteDeTablero(posicion.getColumna())));
 			cantidadDePosiciones++;
 		}
 		barco.setPosicionTablero(ubicacion);

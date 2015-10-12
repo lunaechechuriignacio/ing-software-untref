@@ -15,7 +15,7 @@ public class TestBarco {
 		Barco barco = new Barco("Acorazado", 2);
 		Assert.assertEquals("Acorazado", barco.getTipoDeBarco());
 		Assert.assertEquals(2, barco.getTamanoLongitud());
-	}/*
+	}
 
 	@Test
 	public void seteoLaPosicionDelBarcoYAciertoElDisparo() {
@@ -43,5 +43,5 @@ public class TestBarco {
 
 		Assert.assertFalse(barco.aciertoDisparo(posicion3));
 	}
-*/
+
 }

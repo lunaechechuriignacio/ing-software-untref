@@ -32,7 +32,7 @@ public class TestTablero {
 	@Test
 	public void agregarUnAcorazadoHorizaontalConLaPosicionFinalFueraDelTablero() {
 		Tablero tablero = new Tablero(10);
-		Posicion posicionInicial = new Posicion(2,10);
+		Posicion posicionInicial = new Posicion(2, 10);
 		String orientacionBarco = "Horizontal";
 		String tipoBarco = "Acorazado";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
@@ -82,7 +82,7 @@ public class TestTablero {
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		Assert.assertTrue(tablero.isEstadoBarcoAgregado());
 	}
-/////////////////////////////////////////
+
 	@Test
 	public void agregarUnAcorazadoVerticalConUnBarcoEnElTablero() {
 		Tablero tablero = new Tablero(10);
@@ -99,7 +99,7 @@ public class TestTablero {
 	@Test
 	public void agregarUnDestructorVerticalConLaPosicionFinalFueraDelTablero() {
 		Tablero tablero = new Tablero(10);
-		Posicion posicionInicial = new Posicion(10,10);
+		Posicion posicionInicial = new Posicion(10, 10);
 		String orientacionBarco = "Vertical";
 		String tipoBarco = "Destructor";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
@@ -128,7 +128,7 @@ public class TestTablero {
 
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
-	
+
 	@Test
 	public void acertarDisparoDondeHayUnDestructor() {
 		Tablero tablero = new Tablero(10);
@@ -140,7 +140,7 @@ public class TestTablero {
 		tablero.dispararABarco(posicionInicial);
 		Assert.assertTrue(tablero.getEstadoAciertoDistaro());
 	}
-	
+
 	@Test
 	public void errarDisparoDondeHayAgua() {
 		Tablero tablero = new Tablero(10);
@@ -152,7 +152,7 @@ public class TestTablero {
 		tablero.dispararABarco(posicionAgua);
 		Assert.assertFalse(tablero.getEstadoAciertoDistaro());
 	}
-	
+
 	@Test
 	public void errarDisparoFueraDelTablero() {
 		Tablero tablero = new Tablero(10);

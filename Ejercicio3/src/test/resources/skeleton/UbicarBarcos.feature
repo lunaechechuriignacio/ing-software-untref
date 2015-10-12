@@ -5,7 +5,7 @@ Feature: Como usuario quiero ubicar mis barcos
     When jugador posiciona un "Acorazado" en la posicion (1,1) "HORIZONTAL"
     Then barco posicionado exitosamente
 
-  Scenario: No se puede ubicar un barco en una posición ya ocupada
+  Scenario: No se puede ubicar un barco en una posicion ya ocupada
     Given hay un barco en posicion (1,1)
     When jugador posiciona un barco en la posicion (1,1) "HORIZONTAL"
     Then posicion ocupada no se puede ubicar el barco alli
@@ -15,7 +15,7 @@ Feature: Como usuario quiero ubicar mis barcos
     When jugador posiciona un  "Destructor" en la posicion (1,1) "VERTICAL"
     Then posicion ocupada no se puede ubicar el barco alli
 
-  Scenario: No puedo ubicar mi barco en una posición fuera del tablero
+  Scenario: No puedo ubicar mi barco en una posicion fuera del tablero
     Given tablero es de 10x10
     When jugador posiciona un barco en la posicion (11,1) "VERTICAL"
     Then la posicion elegida no pertenece al tablero

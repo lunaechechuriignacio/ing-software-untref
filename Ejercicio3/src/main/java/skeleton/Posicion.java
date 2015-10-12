@@ -19,4 +19,19 @@ public class Posicion {
 	public boolean isIgual(Posicion posicion) {
 		return ((posicion.getFila()) == this.fila && (posicion.getColumna() == this.columna));
 	}
+
+	@Override
+	public int hashCode() {
+
+		return (((this.fila - 1) * 10) + this.columna);
+
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Posicion posicion = (Posicion) obj;
+		return ((this.fila == posicion.getFila()) && (this.columna == posicion
+				.getColumna()));
+
+	}
 }

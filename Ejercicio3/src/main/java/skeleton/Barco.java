@@ -1,4 +1,4 @@
-package skeleton;
+package  skeleton;
 
 import java.util.ArrayList;
 
@@ -45,4 +45,7 @@ public class Barco {
 		return tamanoLongitud;
 	}
 
+	public ArrayList<Posicion> getPosicionTablero() {
+		return this.posicionTablero;
+	}
 }

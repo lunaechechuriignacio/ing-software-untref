@@ -1,7 +1,6 @@
 package skeleton;
 
 import java.util.ArrayList;
-import skeleton.Barco;
 import skeleton.Destructor;
 import skeleton.Posicion;
 import org.junit.Assert;

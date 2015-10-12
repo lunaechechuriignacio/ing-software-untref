@@ -1,7 +1,7 @@
 package skeleton;
 
 public class BatallaNaval {
-	private boolean estadoBarcoAgregado;
+	private boolean estadoBarcoAgregado,estadoDisparoABarco;
 	private Tablero tablero;
 
 	public BatallaNaval(int tamanoTablero) {
@@ -20,4 +20,16 @@ public class BatallaNaval {
 		return this.estadoBarcoAgregado;
 	}
 
+	public void disparar(int fila, int columna) {
+		
+		Posicion posicionDeDisparo = new Posicion(fila, columna);
+		tablero.dispararABarco(posicionDeDisparo);
+		estadoDisparoABarco=(tablero.getEstadoAciertoDistaro());
+	}
+
+	public boolean isEstadoDisparoABarco() {
+		return estadoDisparoABarco;
+	}
+
+	
 }

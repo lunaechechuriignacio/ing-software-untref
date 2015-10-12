@@ -1,4 +1,4 @@
-package skeleton;
+package test.java.skeleton;
 
 import java.util.ArrayList;
 import skeleton.Barco;
@@ -44,4 +44,17 @@ public class TestBarco {
 		Assert.assertFalse(barco.aciertoDisparo(posicion3));
 	}
 
+	@Test
+	public void disparaYElBarcoNoSeHundio() {
+		Barco barco = new Barco("Acorazado", 2);
+		this.posicionTablero = new ArrayList<Posicion>();
+		Posicion posicion1 = new Posicion(1, 1);
+		Posicion posicion2 = new Posicion(1, 2);
+		this.posicionTablero.add(posicion1);
+		this.posicionTablero.add(posicion2);
+		barco.setPosicionTablero(this.posicionTablero);
+
+		Assert.assertTrue(barco.aciertoDisparo(posicion2));
+		Assert.assertFalse(barco.isEstadoHundido());
+	}
 }

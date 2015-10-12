@@ -40,12 +40,18 @@ public class Tablero {
 			String tipoBarco) {
 		Barco barco = null;
 		this.setEstadoBarcoAgregado(false);
-		
+		if ((this.verificarLimiteDeTablero(posicionInicial.getFila()))
+				&& (this.verificarLimiteDeTablero(posicionInicial.getColumna()))) {
 			barco = this.crearBarco(tipoBarco);
 			this.eleccionHorizontalOVertical(posicionInicial, barco,
 					orientacionBarco);
 			this.agregarBarcoAlTablero(barco);
-		
+		}
+	}
+
+	private boolean verificarLimiteDeTablero(int posicion) {
+
+		return ((posicion >= 0) && (posicion <= this.tamanoTablero));
 	}
 
 	private void eleccionHorizontalOVertical(Posicion posicionInicial,
@@ -53,15 +59,13 @@ public class Tablero {
 
 		if (orientacion == "Horizontal")
 			this.agregarBarcoHorinzontal(posicionInicial, barco);
-		
+
 	}
 
 	private void agregarBarcoAlTablero(Barco barco) {
 		if (this.isEstadoBarcoAgregado())
 			this.tablero.add(barco);
 	}
-
-	
 
 	private Posicion nuevaPosicion(int fila, int columna) {
 
@@ -89,14 +93,14 @@ public class Tablero {
 			posicion = nuevaPosicion(posicionInicial.getFila()
 					+ cantidadDePosiciones, posicionInicial.getColumna());
 			ubicacion.add(posicion);
-			estadoPosicion = (this.estadoPosicionLibre(posicion));
+			estadoPosicion = ((this.estadoPosicionLibre(posicion)) && (this
+					.verificarLimiteDeTablero(posicion.getFila())));
 			cantidadDePosiciones++;
 		}
 		barco.setPosicionTablero(ubicacion);
 		this.setEstadoBarcoAgregado(estadoPosicion);
 	}
 
-	
 	public boolean isEstadoBarcoAgregado() {
 		return estadoBarcoAgregado;
 	}
@@ -105,5 +109,4 @@ public class Tablero {
 		this.estadoBarcoAgregado = estadoBarcoAgregado;
 	}
 
-	
 }

@@ -4,4 +4,5 @@ skeleton\TestBarco.class
 skeleton\RunCukesTest.class
 test\java\skeleton\TestAcorazado.class
 skeleton\TestDestructor.class
+skeleton\TestLancha.class
 skeleton\UbicarBarcosStepdefs.class

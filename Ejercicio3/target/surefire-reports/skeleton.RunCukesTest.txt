@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: skeleton.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 0, Errors: 0, Skipped: 32, Time elapsed: 1.374 sec
+Tests run: 40, Failures: 0, Errors: 0, Skipped: 32, Time elapsed: 2.037 sec

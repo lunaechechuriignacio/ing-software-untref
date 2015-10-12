@@ -51,5 +51,10 @@ private BatallaNaval batallaNaval;
 			throws Throwable {
 		Assert.assertFalse(batallaNaval.getEstadoBarcoAgregado());
 	}
+	
+	@When("^jugador posiciona un  \"(.*?)\" en la posicion \\((\\d+),(\\d+)\\) \"(.*?)\"$")
+	public void jugador_posiciona_un_en_la_posicion1(String tipoBarco, int fila, int columna, String orientacionBarco) throws Throwable {
+		batallaNaval.ubicarBarco(fila, columna, tipoBarco, orientacionBarco);
+	}
 }
 

@@ -32,7 +32,7 @@ public class TestTablero {
 	@Test
 	public void agregarUnAcorazadoHorizaontalConLaPosicionFinalFueraDelTablero() {
 		Tablero tablero = new Tablero(10);
-		Posicion posicionInicial = new Posicion(10, 1);
+		Posicion posicionInicial = new Posicion(2,10);
 		String orientacionBarco = "Horizontal";
 		String tipoBarco = "Acorazado";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
@@ -82,23 +82,24 @@ public class TestTablero {
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		Assert.assertTrue(tablero.isEstadoBarcoAgregado());
 	}
-
+/////////////////////////////////////////
 	@Test
 	public void agregarUnAcorazadoVerticalConUnBarcoEnElTablero() {
 		Tablero tablero = new Tablero(10);
-		Posicion posicionInicial = new Posicion(1, 1);
+		Posicion posicionInicial = new Posicion(2, 1);
+		Posicion posicion = new Posicion(1, 1);
 		String orientacionBarco = "Vertical";
-		String tipoBarco = "Acorazado";
+		String tipoBarco = "Lancha";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
-		tipoBarco = "Lancha";
-		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
+		tipoBarco = "Destructor";
+		tablero.agregarBarco(posicion, orientacionBarco, tipoBarco);
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
 
 	@Test
 	public void agregarUnDestructorVerticalConLaPosicionFinalFueraDelTablero() {
 		Tablero tablero = new Tablero(10);
-		Posicion posicionInicial = new Posicion(2, 10);
+		Posicion posicionInicial = new Posicion(10,10);
 		String orientacionBarco = "Vertical";
 		String tipoBarco = "Destructor";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);

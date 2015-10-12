@@ -92,10 +92,10 @@ public class Tablero {
 		while ((estadoPosicion)
 				&& (cantidadDePosiciones < barco.getTamanoLongitud())) {
 			posicion = nuevaPosicion(posicionInicial.getFila()
-					+ cantidadDePosiciones, posicionInicial.getColumna());
+					, posicionInicial.getColumna()+ cantidadDePosiciones);
 			ubicacion.add(posicion);
 			estadoPosicion = ((this.estadoPosicionLibre(posicion)) && (this
-					.verificarLimiteDeTablero(posicion.getFila())));
+					.verificarLimiteDeTablero(posicion.getColumna())));
 			cantidadDePosiciones++;
 		}
 		barco.setPosicionTablero(ubicacion);
@@ -109,11 +109,11 @@ public class Tablero {
 		int cantidadDePosiciones = 0;
 		while ((estadoPosicion)
 				&& (cantidadDePosiciones < barco.getTamanoLongitud())) {
-			posicion = nuevaPosicion(posicionInicial.getFila(),
-					posicionInicial.getColumna() + cantidadDePosiciones);
+			posicion = nuevaPosicion(posicionInicial.getFila()+ cantidadDePosiciones,
+					posicionInicial.getColumna() );
 			ubicacion.add(posicion);
 			estadoPosicion = ((this.estadoPosicionLibre(posicion)) && (this
-					.verificarLimiteDeTablero(posicion.getColumna())));
+					.verificarLimiteDeTablero(posicion.getFila())));
 			cantidadDePosiciones++;
 		}
 		barco.setPosicionTablero(ubicacion);

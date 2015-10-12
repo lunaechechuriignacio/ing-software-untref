@@ -16,4 +16,7 @@ public class Posicion {
 		return columna;
 	}
 
+	public boolean isIgual(Posicion posicion) {
+		return ((posicion.getFila()) == this.fila && (posicion.getColumna() == this.columna));
+	}
 }

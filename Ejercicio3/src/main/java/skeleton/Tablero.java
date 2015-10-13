@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Tablero {
 
-	private ArrayList<Barco> tablero;
+private ArrayList<Barco> tablero;
 	private int tamanoTablero;
 	private boolean estadoBarcoAgregado, estadoAciertoDisparo;
 
@@ -124,6 +124,18 @@ public class Tablero {
 		return estadoBarcoAgregado;
 	}
 
+	public boolean isBarcoHundido(Posicion posicion){
+		
+		Barco barcoEncontrado = null;
+		for (Barco barcoBuscado : tablero) {
+			
+			if (barcoBuscado.isPosicionEnDisparosAcertados(posicion))
+				barcoEncontrado=barcoBuscado;
+		}
+		
+		return ((barcoEncontrado.isPosicionEnDisparosAcertados(posicion))&&(barcoEncontrado.isEstadoHundido()));
+	}
+	
 	public void setEstadoBarcoAgregado(boolean estadoBarcoAgregado) {
 		this.estadoBarcoAgregado = estadoBarcoAgregado;
 	}

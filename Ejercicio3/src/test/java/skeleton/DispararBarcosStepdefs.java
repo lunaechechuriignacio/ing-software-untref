@@ -48,4 +48,14 @@ public class DispararBarcosStepdefs {
 	public void no_se_puede_disparar_a_esa_posicion() throws Throwable {
 		Assert.assertFalse(batallaNaval.isEstadoDisparoABarco());
 	}
+
+	@When("^disparo a la posicion (\\d+),(\\d+) And el disparo dio en el blanco$")
+	public void disparo_a_la_posicion_And_el_disparo_dio_en_el_blanco(int fila, int columna) throws Throwable {
+	  batallaNaval.disparar(fila, columna);
+	}
+
+	@Then("^el barco ha sido hundido en la posicion (\\d+),(\\d+)$")
+	public void el_barco_ha_sido_hundido_en_la_posicion(int fila, int columna) throws Throwable {
+	    Assert.assertTrue(batallaNaval.estadoBarcoHundido(fila,columna));
+	}
 }

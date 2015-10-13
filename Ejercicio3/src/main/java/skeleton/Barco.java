@@ -29,6 +29,11 @@ public class Barco {
 		return this.posicionDisparosAcertados.size();
 	}
 
+	public boolean isPosicionEnDisparosAcertados(Posicion posicion)
+	{
+		return this.posicionDisparosAcertados.contains(posicion);
+	}
+	
 	public boolean isEstadoHundido() {
 		return this.posicionDisparosAcertados.size() == this.tamanoLongitud;
 	}

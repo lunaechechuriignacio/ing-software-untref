@@ -14,6 +14,7 @@ public class TestTablero {
 		String orientacionBarco = "Horizontal";
 		String tipoBarco = "Acorazado";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
+		
 		Assert.assertTrue(tablero.isEstadoBarcoAgregado());
 	}
 
@@ -26,6 +27,7 @@ public class TestTablero {
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		tipoBarco = "Lancha";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
+		
 		Assert.assertFalse(tablero.isEstadoBarcoAgregado());
 	}
 
@@ -136,8 +138,8 @@ public class TestTablero {
 		String orientacionBarco = "Vertical";
 		String tipoBarco = "Destructor";
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
-
 		tablero.dispararABarco(posicionInicial);
+		
 		Assert.assertTrue(tablero.getEstadoAciertoDistaro());
 	}
 
@@ -150,6 +152,7 @@ public class TestTablero {
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		Posicion posicionAgua = new Posicion(1, 10);
 		tablero.dispararABarco(posicionAgua);
+		
 		Assert.assertFalse(tablero.getEstadoAciertoDistaro());
 	}
 
@@ -162,6 +165,7 @@ public class TestTablero {
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		Posicion posicionDisparo = new Posicion(1, 11);
 		tablero.dispararABarco(posicionDisparo);
+		
 		Assert.assertFalse(tablero.getEstadoAciertoDistaro());
 	}
 }

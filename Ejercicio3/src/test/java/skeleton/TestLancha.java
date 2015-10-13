@@ -13,6 +13,7 @@ public class TestLancha {
 	@Test
 	public void asignarTipodeBarcoYLongitud() {
 		Lancha lancha = new Lancha("Lancha", 1);
+		
 		Assert.assertEquals("Lancha", lancha.getTipoDeBarco());
 		Assert.assertEquals(1, lancha.getTamanoLongitud());
 	}

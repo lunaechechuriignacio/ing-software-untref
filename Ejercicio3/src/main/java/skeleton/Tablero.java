@@ -4,14 +4,13 @@ import java.util.ArrayList;
 
 public class Tablero {
 
-private ArrayList<Barco> tablero;
+	private ArrayList<Barco> tablero;
 	private int tamanoTablero;
 	private boolean estadoBarcoAgregado, estadoAciertoDisparo;
 
 	public Tablero(int tamano) {
 		tablero = new ArrayList<Barco>();
 		this.tamanoTablero = tamano;
-
 	}
 
 	private Barco crearBarco(String tipoBarco) {
@@ -51,7 +50,6 @@ private ArrayList<Barco> tablero;
 
 	private void eleccionHorizontalOVertical(Posicion posicionInicial,
 			Barco barco, String orientacion) {
-
 		if (orientacion == "Horizontal")
 			this.agregarBarcoHorinzontal(posicionInicial, barco);
 		else
@@ -64,12 +62,10 @@ private ArrayList<Barco> tablero;
 	}
 
 	private boolean verificarLimiteDeTablero(int posicion) {
-
 		return ((posicion >= 0) && (posicion <= this.tamanoTablero));
 	}
 
 	private Posicion nuevaPosicion(int fila, int columna) {
-
 		return new Posicion(fila, columna);
 	}
 
@@ -77,7 +73,6 @@ private ArrayList<Barco> tablero;
 		boolean estadoUbicacion = true;
 
 		for (Barco barcoEncontrado : tablero) {
-
 			if (barcoEncontrado.getPosicionTablero().contains(posicion))
 				estadoUbicacion = false;
 		}
@@ -125,14 +120,11 @@ private ArrayList<Barco> tablero;
 	}
 
 	public boolean isBarcoHundido(Posicion posicion){
-		
 		Barco barcoEncontrado = null;
 		for (Barco barcoBuscado : tablero) {
-			
 			if (barcoBuscado.isPosicionEnDisparosAcertados(posicion))
 				barcoEncontrado=barcoBuscado;
 		}
-		
 		return ((barcoEncontrado.isPosicionEnDisparosAcertados(posicion))&&(barcoEncontrado.isEstadoHundido()));
 	}
 	
@@ -146,7 +138,6 @@ private ArrayList<Barco> tablero;
 
 	public void dispararABarco(Posicion posicionDeDisparo) {
 		this.estadoAciertoDisparo = false;
-
 		for (Barco barcoEncontrado : tablero) {
 			if (barcoEncontrado.aciertoDisparo(posicionDeDisparo))
 				this.estadoAciertoDisparo = true;

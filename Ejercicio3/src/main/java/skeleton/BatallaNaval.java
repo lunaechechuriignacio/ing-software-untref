@@ -11,7 +11,6 @@ public class BatallaNaval {
 	public void ubicarBarco(int fila, int columna, String tipoBarco,
 			String orientacionBarco) {
 		Posicion posicionInicial = new Posicion(fila, columna);
-
 		tablero.agregarBarco(posicionInicial, orientacionBarco, tipoBarco);
 		this.estadoBarcoAgregado = tablero.isEstadoBarcoAgregado();
 	}
@@ -21,7 +20,6 @@ public class BatallaNaval {
 	}
 
 	public void disparar(int fila, int columna) {
-
 		Posicion posicionDeDisparo = new Posicion(fila, columna);
 		tablero.dispararABarco(posicionDeDisparo);
 		estadoDisparoABarco = (tablero.getEstadoAciertoDistaro());

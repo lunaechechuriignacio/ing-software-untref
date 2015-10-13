@@ -22,9 +22,7 @@ public class Posicion {
 
 	@Override
 	public int hashCode() {
-
 		return (((this.fila - 1) * 10) + this.columna);
-
 	}
 
 	@Override
@@ -32,6 +30,5 @@ public class Posicion {
 		Posicion posicion = (Posicion) obj;
 		return ((this.fila == posicion.getFila()) && (this.columna == posicion
 				.getColumna()));
-
 	}
 }

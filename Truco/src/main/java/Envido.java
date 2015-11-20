@@ -20,7 +20,7 @@ public class Envido {
 		} else
 
 		if (this.DosCartasIgual()) {
-			valorEnvido = this.getValorDosCartasIguales();
+			valorEnvido = this.getValorDosCartasIguales()+20;
 		} else
 			valorEnvido = this.getMayorCarta();
 
@@ -33,7 +33,7 @@ public class Envido {
 			numero = this.cartaDos.getNumero();
 		else if (numero < this.cartaTres.getNumero())
 			numero = this.cartaTres.getNumero();
-		return numero ;
+		return numero;
 
 	}
 
@@ -59,17 +59,6 @@ public class Envido {
 
 		else
 			valor = this.cartaDos.getNumero() + this.cartaDos.getNumero();
-
-		return valor;
-	}
-
-	private int getValorCartaEnvido(Carta carta) {
-
-		int valor = carta.getNumero();
-
-		if (valor >= 10) {
-			valor = 0;
-		}
 
 		return valor;
 	}
